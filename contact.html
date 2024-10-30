@@ -24,7 +24,59 @@
             </header>
             </nav>
         <hr />
+        <section>
+        <h1>Contacteer ons! &#8669;</h1>
+          <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+            <fieldset>
+                <h3>Reden van contact</h3>
+                <select id="reden-van-contact" name="reden-van-contact">
+                    <option value="bestelling" selected>Bestelling</option>
+                    <option value="klantenservice">Klantenservice</option>
+                    <option value="andere">Andere</option>
+                  </select>
+            </fieldset>
+            <fieldset>
+              <h3>Categorie</h3>
+              <div>
+                <input type="radio" name="Categorie" id="rdbAccessoires" value="Accessoires" />
+                <label for="rdbAccessoires">Accessoires</label>
+              </div>
+              <div>
+                <input type="radio" name="Categorie" id="rdbSports" value="Sports" />
+                <label for="rdbSports">Sports</label>
+              </div>
+              <div>
+                <input type="radio" name="Categorie" id="rdbHalloween" value="Halloween" />
+                <label for="rdbHalloween">Halloween</label>
+              </div>
+              <div>
+                <input type="radio" name="Categorie" id="rdbBrunch" value="Brunch" />
+                <label for="Brunch">Brunch</label>
+              </div>
+            </fieldset>
+            <fieldset id="info-form">
+              <h3>Jouw info</h3>
+              <label for="lastname">*Familienaam:</label>
+              <input type="text" name="lastname" id="lastname-input" required />
+              <label for="firstname">*Voornaam:</label>
+              <input type="text" name="firstname" id="firstname-input" required />
+              <label for="adress">*Adres:</label>
+              <input type="text" name="adress" id="adress-input" required />
+              <label for="telefoon">*Telefoonnummer:</label>
+              <input type="tel" name="telefoon" id="telefoon-input" required />
+              <label for="txtMail">*E-mailadres:</label>
+              <input type="email" name="Mail" id="txtMail" required />
+              <label for="vraag">*Vraag</label>
+              <textarea id="vraag" name="vraag" rows="4" cols="30"></textarea>
+              <p>* Verplichte velden</p>
+            </fieldset>
+            <input type="submit" value="Verstuur" />
+            <input type="submit" value="Reset" />
+          </form>
+    </section>
+
         <button id="chat"><i class="fa-regular fa-comment fa-lg"></i></button>
+        <hr/>
         <footer>
             Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden.
             <hr/>

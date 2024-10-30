@@ -8,7 +8,7 @@
 body {
     position: relative;
     margin: 0;
-    margin-top: 20px;
+    margin: 20px 0;
     padding: 0 30px;
     font-family: "Roboto";
     color: var(--text-color);
@@ -31,12 +31,16 @@ nav ul li {
     margin: 0 20px;
 }
 
-nav ul li a {
+a {
     text-decoration: none;
     color: var(--text-color);
 }
 
 a:hover {
+    color: pink;
+}
+
+a.on {
     color: pink;
 }
 
@@ -110,10 +114,17 @@ section {
     
 }
 
+#products {
+    margin-bottom: 50px;
+}
+
 #products article {
     background-color: blueviolet;
     height: 300px;
     width: 300px;
+}
+#products article a {
+    font-size: 1.5rem;
 }
 
 #chat {
@@ -131,4 +142,13 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+
+#info-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
 }
