@@ -6,6 +6,7 @@
 }
 
 body {
+    position: relative;
     margin: 0;
     margin-top: 20px;
     padding: 0 30px;
@@ -42,19 +43,21 @@ a:hover {
 #logo {
     height: 50px;
 }
-
 #search {
-    border-radius: 40%;
-    border: solid var(--text-color) 1px;
     height: 30px;
     width: 30px;
+}
+
+button {
+    border-radius: 40%;
+    border: solid var(--text-color) 1px;
     background: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#search:hover {
+button:hover {
     background: pink;
     cursor: pointer;
 }
@@ -113,9 +116,19 @@ section {
     width: 300px;
 }
 
+#chat {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+    size: 100px;
+}
+
 
 footer {
     display: flex;
-    justify-content: center;
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
