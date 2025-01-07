@@ -1,0 +1,25 @@
+:root {
+    --primary-color: rgb(251, 205, 249);
+    --secondary-color: rgb(250, 233, 248);
+    --text-color: rgb(56, 55, 55);
+    --border-radius: 6px;
+}
+
+/*  FORM  */
+
+#info-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 15px 0 5px 0;
+}
+
+input, textarea, select {
+    border-radius: var(--border-radius);
+    box-shadow: none;
+    border: none;
+    outline:none;
+    padding: 3px 5px;
+}

@@ -4,6 +4,7 @@
     --primary-color: rgb(251, 205, 249);
     --secondary-color: rgb(250, 233, 248);
     --text-color: rgb(56, 55, 55);
+    --border-radius: 6px;
 }
 
 body {
@@ -105,52 +106,11 @@ section article a {
 
 #waarom-ons {
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius:  var(--border-radius);
     background: var(--primary-color);
     font-size: 1.1rem;
     width: 300px;
 }
-
-.products {
-    margin-bottom: 5rem;
-}
-
-
-.products article, #categories article {
-    position: relative;
-    border-radius: 6px;
-    height: 300px;
-    width: 300px;
-    background: var(--primary-color);
-    border: solid 6px var(--primary-color);
-}
-
-.product-img {
-    background: var(--secondary-color);
-    border-radius: 6px;
-    height: 200px;
-    width: 300px;
-}
-
-
-#halloween-img {
-    background-image: url("./images/halloween/halloween.jpg");
-    background-size: cover;
-}
-#accessoires-img {
-    background-image: url("./images/accessories.png/accessories.png");
-    background-size: cover;
-}
-#sport-img {
-    background-image: url("./images/outdoors/sports.png");
-    background-size:cover;
-}
-#brunch-img {
-    background-image: url("./images/teatime/fancy.png");
-    background-size: cover;
-}
-
-
 
 #chat {
     position: fixed;
@@ -172,22 +132,10 @@ footer {
     height: auto;
 }
 
-
-/*  FORM  */
-
-#info-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 15px;
-}
-
-@media only screen and (max-width: 1600px){
-  
-}
-
 @media only screen and (max-width: 60em){
 
+}
+
+@media only screen and (max-width: 30em){
+  
 }
