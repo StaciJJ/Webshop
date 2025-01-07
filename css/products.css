@@ -1,10 +1,7 @@
-:root {
-    --primary-color: rgb(251, 205, 249);
-    --secondary-color: #366474;
-    --third-color: rgb(250, 233, 248);
-    --text-color: rgb(56, 55, 55);
-    --border-radius: 6px;
-}
+@import url(./variables.css);
+
+
+/*--------------- PRODUCTS ---------------*/
 
 h2 {
     color: var(--third-color);
@@ -12,13 +9,29 @@ h2 {
 
 .products {
     margin-bottom: 5rem;
+    > a {
+        color: var(--text-color);
+    }
+    > article {
+ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .product-img {
+        background: var(--third-color);
+        border-radius: var(--border-radius);
+        height: 200px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
 }
 
-.products a {
-    color: var(--text-color);
+.product-discription {
+    margin-top: -.8rem;
+    padding: 0 20px;
+    font-size: 1.3rem;
 }
-.products a:hover {
-    color: var(--third-color);
+
+.price {
+    text-align: end;
 }
 
 .products article,
@@ -29,26 +42,13 @@ h2 {
     width: 300px;
     background: var(--primary-color);
     border: solid 6px var(--primary-color);
-}
 
-.product-img {
-    background: var(--third-color);
-    border-radius: var(--border-radius);
-    height: 200px;
-    width: 300px;
-}
-
-.product-discription {
-    margin-top: -.8rem;
-    padding: 0 20px;
-    font-size: 1.3rem;
-}
-.price {
-    text-align: end;
 }
 
 
-/*--------------- IMAGES ---------------*/
+
+
+/*--------------- CATEGORY IMAGES ---------------*/
 
 #halloween-img {
     background-image: url("./images/halloween/halloween.jpg");
@@ -64,5 +64,120 @@ h2 {
 }
 #brunch-img {
     background-image: url("./images/teatime/fancy.png");
+    background-size: cover;
+} 
+
+/*--------------- CATEGORY IMAGES ---------------*/
+
+#highlight-img-1 {
+    background-image: url("./images/halloween/vampire.png");
+    background-size: cover;
+}
+#highlight-img-2 {
+    background-image: url("./images/outdoors/checkers.png");
+    background-size: cover;
+}
+#highlight-img-3 {
+    background-image: url("./images/outdoors/swimsuit.png");
+    background-size: cover;
+}
+#highlight-img-4 {
+    background-image: url("./images/teatime/fancy.png");
+    background-size: cover;
+} 
+#highlight-img-5 {
+    background-image: url("./images/accessories.png/beanie.png");
+    background-size: cover;
+} 
+
+/*--------------- SECTION 1 IMAGES ---------------*/
+
+#product-img-1 {
+    background-image: url("./images/halloween/astronaut.png");
+    background-size: cover;
+}
+#product-img-2 {
+    background-image: url("./images/halloween/chucky.png");
+    background-size: cover;
+}
+#product-img-3 {
+    background-image: url("./images/halloween/goku.png");
+    background-size: cover;
+}
+#product-img-4 {
+    background-image: url("./images/halloween/vampire.png");
+    background-size: cover;
+}
+#product-img-5 {
+    background-image: url("./images/halloween/darthvader.png");
+    background-size: cover;
+}
+
+/*---------------SECTION 2 IMAGES ---------------*/
+
+#product-img-6 {
+    background-image: url("./images/accessories.png/bandana.png");
+    background-size: cover;
+}
+#product-img-7 {
+    background-image: url("./images/accessories.png/beanie.png");
+    background-size: cover;
+}
+#product-img-8 {
+    background-image: url("./images/accessories.png/bowtie.png");
+    background-size: cover;
+}
+#product-img-9 {
+    background-image: url("./images/accessories.png/socks.png");
+    background-size: cover;
+}
+#product-img-10 {
+    background-image: url("./images/accessories.png/sunglasses.jpg");
+    background-size: cover;
+}
+
+/*---------------SECTION 3 IMAGES ---------------*/
+
+#product-img-11 {
+    background-image: url("./images/teatime/");
+    background-size: cover;
+}
+#product-img-12 {
+    background-image: url("./images/teatime/fancy.png");
+    background-size: cover;
+}
+#product-img-13 {
+    background-image: url("./images/teatime/fancy.png");
+    background-size: cover;
+}
+#product-img-14 {
+    background-image: url("./images/teatime/fancy.png");
+    background-size: cover;
+}
+#product-img-15 {
+    background-image: url("./images/teatime/fancy.png");
+    background-size: cover;
+}
+
+/*---------------SECTION 4 IMAGES ---------------*/
+
+#product-img-16 {
+    background-image: url("./images/outdoors/swimsuit.png");
+    background-size: cover;
+}
+#product-img-17 {
+    background-image: url("./images/outdoors/checkers.png");
+    background-size: cover;
+}
+#product-img-18 {
+    background-image: url("./images/outdoors/football.png");
+    background-size: cover;
+}
+#product-img-19 {
+    background-image: url("./images/outdoors/lifevest.png");
+    background-size: cover;
+}
+#product-img-20 {
+    background-image: url("./images/outdoors/golf.png");
     background-size: cover;
 }

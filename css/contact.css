@@ -1,12 +1,7 @@
-:root {
-    --primary-color: rgb(251, 205, 249);
-    --secondary-color: rgb(54, 100, 116);
-    --third-color: rgb(250, 233, 248);
-    --text-color: rgb(56, 55, 55);
-    --border-radius: 6px;
-}
+@import url(./variables.css);
 
-/*  FORM  */
+
+/*--------------- CONTACT FORM ---------------*/
 
 #info-form {
     display: flex;
