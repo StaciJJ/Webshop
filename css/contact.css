@@ -1,6 +1,7 @@
 :root {
     --primary-color: rgb(251, 205, 249);
-    --secondary-color: rgb(250, 233, 248);
+    --secondary-color: rgb(54, 100, 116);
+    --third-color: rgb(250, 233, 248);
     --text-color: rgb(56, 55, 55);
     --border-radius: 6px;
 }
@@ -10,6 +11,11 @@
 #info-form {
     display: flex;
     flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    color: var(--primary-color);
 }
 
 label {
@@ -22,4 +28,22 @@ input, textarea, select {
     border: none;
     outline:none;
     padding: 3px 5px;
+}
+
+.input-button {
+    scale: 1.5;
+    cursor: pointer;
+    gap: 10px;
+    padding: 5px;
+    background: var(--primary-color);
+}
+
+.input-button:hover {
+    background: var(--secondary-color);
+}
+
+
+#input-button-container {
+    display: flex;
+    justify-content: space-around;
 }

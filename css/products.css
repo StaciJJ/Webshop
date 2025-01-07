@@ -1,16 +1,30 @@
 :root {
     --primary-color: rgb(251, 205, 249);
-    --secondary-color: rgb(250, 233, 248);
+    --secondary-color: #366474;
+    --third-color: rgb(250, 233, 248);
     --text-color: rgb(56, 55, 55);
     --border-radius: 6px;
+}
+
+h2 {
+    color: var(--third-color);
 }
 
 .products {
     margin-bottom: 5rem;
 }
-.products article, #categories article {
+
+.products a {
+    color: var(--text-color);
+}
+.products a:hover {
+    color: var(--third-color);
+}
+
+.products article,
+#categories article {
     position: relative;
-    border-radius:  var(--border-radius);
+    border-radius: var(--border-radius);
     height: 300px;
     width: 300px;
     background: var(--primary-color);
@@ -18,10 +32,19 @@
 }
 
 .product-img {
-    background: var(--secondary-color);
+    background: var(--third-color);
     border-radius: var(--border-radius);
     height: 200px;
     width: 300px;
+}
+
+.product-discription {
+    margin-top: -.8rem;
+    padding: 0 20px;
+    font-size: 1.3rem;
+}
+.price {
+    text-align: end;
 }
 
 
@@ -37,7 +60,7 @@
 }
 #sport-img {
     background-image: url("./images/outdoors/sports.png");
-    background-size:cover;
+    background-size: cover;
 }
 #brunch-img {
     background-image: url("./images/teatime/fancy.png");
