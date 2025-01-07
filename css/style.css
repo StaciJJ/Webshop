@@ -7,9 +7,13 @@
 
 body {
     position: relative;
-    margin: 0;
-    margin: 20px 0;
-    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 10px;
+    width: 100%;
     font-family: "Roboto";
     color: var(--text-color);
 }
@@ -18,7 +22,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 2rem 2rem 2rem;
+    
 }
 
 nav ul {
@@ -72,60 +77,75 @@ h1 {
     font-weight: lighter;
 }
 
-#home {
-    margin-top: 2rem;
-}
-
 
 img {
     border-radius: 20px;
     object-fit: cover;
-    height: 300px;    /* background-color: aqua; */
+    height: 300px;
 }
 
-
 section {
-    position: relative;
+    position: relative; 
     display: flex;
-    width: 90vw;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    margin: 20px auto;
     padding: 20px;
     gap: 20px;
 }
 
+
+section article a {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.5rem;
+}
 
 #waarom-ons {
     padding: 10px 20px;
     border-radius: 20px;
     background: var(--primary-color);
     font-size: 1.1rem;
+    width: 300px;
 }
 
 
-#stylish-dog {
-    width: 50%;
-    height: inherit;
-}
-
-.highlight-box {
-    /* background: teal; */
-    width: 30%;
-    height: auto;
-    
-}
-
-#products {
-    margin-bottom: 50px;
-}
-
-#products article {
-    background-color: blueviolet;
+.products article {
+    background-color: rgb(169, 158, 238);
+    border-radius: 6px;
     height: 300px;
     width: 300px;
 }
-#products article a {
-    font-size: 1.5rem;
+
+#categories article {
+    position: relative;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: rgb(169, 158, 238);
+    border-radius: 6px;
+    height: 200px;
+    width: 200px;
 }
+#halloween-article {
+    background-image: url("./images/halloween/halloween.jpg");
+    background-size: contain;
+}
+#accessoires-article {
+    background-image: url("./images/accessories.png/accessories.png");
+    background-size: cover;
+}
+#sport-article {
+    background-image: url("./images/outdoors/sports.png");
+    background-size:cover;
+}
+#brunch-article {
+    background-image: url("./images/teatime/fancy.png");
+    background-size: cover;
+}
+
+
 
 #chat {
     position: fixed;
@@ -142,7 +162,12 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: rgb(169, 158, 238);
+    width: 100%;
 }
+
+
+/*  FORM  */
 
 #info-form {
     display: flex;
@@ -151,4 +176,37 @@ footer {
 
 label {
     margin-top: 15px;
+}
+
+@media only screen and (max-width: 1600px){
+    #products {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        }
+}
+
+@media only screen and (max-width: 60em){
+    #highlights, #products {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        place-items: center;
+        }
+
+}
+
+@media only screen and (max-width: 30em){
+  
+    #highlights, #products {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center;
+    }
+    #products article {
+        height: 150px;
+        width: 150px;
+    }
+    #highlights article {
+        height: 150px;
+        width: 150px;
+    }
 }
