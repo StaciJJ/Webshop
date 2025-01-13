@@ -1,25 +1,26 @@
 @import url(./variables.css);
 
-
 /*--------------- PRODUCTS ---------------*/
 
 h2 {
     color: var(--dark-color);
     font-family: "Reenie Beanie", serif;
     font-size: 3rem;
-
+    margin-bottom: -20px;
+    text-align: left;
+    width: 70%;
 }
 
 .products {
-    position: relative;
     .product-img {
         background: var(--primary-color);
         border-radius: var(--border-radius);
         height: 150px;
         width: 200px;
+        background-size: cover;
     }
-}
 
+}
 
 .products article,
 #categories article {
@@ -28,157 +29,128 @@ h2 {
     height: 230px;
     width: 200px;
     color: var(--text-color);
-}
-
-h5{
-    top: -15px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .product-discription {
+    height: 80px;
+    padding: 10px 15px;
     display: flex;
     flex-direction: column;
-    border: green 2px solid;
-    font-size: 1.3rem;
-    height: 100px;
-    padding: 0 15px;
+    justify-content: center;
+
 }
 
 .price {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: -15px;
 }
-
 
 /*--------------- CATEGORY IMAGES ---------------*/
 
 #halloween-img {
     background-image: url("./images/halloween/halloween.jpg");
-    background-size: cover;
 }
 #accessoires-img {
     background-image: url("./images/accessories.png/accessories.png");
-    background-size: cover;
 }
 #sport-img {
     background-image: url("./images/outdoors/sports.png");
-    background-size: cover;
 }
 #hamster-img {
     background-image: url("./images/hamsters/fancyhamster.png");
-    background-size: cover;
-} 
+}
 
 /*--------------- CATEGORY IMAGES ---------------*/
 
 #highlight-img-1 {
     background-image: url("./images/halloween/vampire.png");
-    background-size: cover;
 }
 #highlight-img-2 {
     background-image: url("./images/outdoors/checkers.png");
-    background-size: cover;
 }
 #highlight-img-3 {
     background-image: url("./images/outdoors/swimsuit.png");
-    background-size: cover;
 }
 #highlight-img-4 {
     background-image: url("./images/hamsters/raincoat.png");
-    background-size: cover;
-} 
+}
 #highlight-img-5 {
     background-image: url("./images/accessories.png/beanie.png");
-    background-size: cover;
-} 
+}
 
 /*--------------- SECTION 1 IMAGES ---------------*/
 
 #product-img-1 {
     background-image: url("./images/halloween/astronaut.png");
-    background-size: cover;
 }
 #product-img-2 {
     background-image: url("./images/halloween/chucky.png");
-    background-size: cover;
 }
 #product-img-3 {
     background-image: url("./images/halloween/goku.png");
-    background-size: cover;
 }
 #product-img-4 {
     background-image: url("./images/halloween/vampire.png");
-    background-size: cover;
 }
 #product-img-5 {
     background-image: url("./images/halloween/darthvader.png");
-    background-size: cover;
 }
 
 /*---------------SECTION 2 IMAGES ---------------*/
 
 #product-img-6 {
     background-image: url("./images/accessories.png/bandana.png");
-    background-size: cover;
 }
 #product-img-7 {
     background-image: url("./images/accessories.png/beanie.png");
-    background-size: cover;
 }
 #product-img-8 {
     background-image: url("./images/accessories.png/bowtie.png");
-    background-size: cover;
 }
 #product-img-9 {
     background-image: url("./images/accessories.png/socks.png");
-    background-size: cover;
 }
 #product-img-10 {
     background-image: url("./images/accessories.png/sunglasses.jpg");
-    background-size: cover;
 }
 
 /*---------------SECTION 3 IMAGES ---------------*/
 
 #product-img-11 {
     background-image: url("./images/hamsters/kimono.png");
-    background-size: cover;
 }
 #product-img-12 {
     background-image: url("./images/hamsters/raincoat.png");
-    background-size: cover;
 }
 #product-img-13 {
     background-image: url("./images/hamsters/sweater.png");
-    background-size: cover;
 }
 #product-img-14 {
     background-image: url("./images/hamsters/vacation.png");
-    background-size: cover;
 }
 #product-img-15 {
     background-image: url("./images/hamsters/viking.png");
-    background-size: cover;
 }
 
 /*---------------SECTION 4 IMAGES ---------------*/
 
 #product-img-16 {
     background-image: url("./images/outdoors/swimsuit.png");
-    background-size: cover;
 }
 #product-img-17 {
     background-image: url("./images/outdoors/checkers.png");
-    background-size: cover;
 }
 #product-img-18 {
     background-image: url("./images/outdoors/football.png");
-    background-size: cover;
 }
 #product-img-19 {
     background-image: url("./images/outdoors/lifevest.png");
-    background-size: cover;
 }
 #product-img-20 {
     background-image: url("./images/outdoors/golf.png");
-    background-size: cover;
 }
