@@ -1,6 +1,5 @@
 @import url(./variables.css);
 
-
 /*--------------- CONTACT FORM ---------------*/
 
 #info-form {
@@ -17,11 +16,13 @@ label {
     margin: 15px 0 5px 0;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     border-radius: var(--border-radius);
     box-shadow: none;
     border: none;
-    outline:none;
+    outline: none;
     padding: 3px 5px;
 }
 
@@ -36,7 +37,6 @@ input, textarea, select {
 .input-button:hover {
     background: var(--light-color);
 }
-
 
 #input-button-container {
     display: flex;

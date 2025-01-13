@@ -8,6 +8,3 @@
 
 3.  Spotlight: Kies een of meer favoriete topics uit de lijst en plaats deze in de “spotlight” op de indexpagina. 
     Link deze door naar de desbetreffende topic pagina.
-
-
-4.  Responsive layout

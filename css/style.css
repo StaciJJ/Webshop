@@ -1,11 +1,12 @@
 @import url(./variables.css);
-@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
 
 /*--------------- GENERAL ---------------*/
 
-html, body {
+html,
+body {
     margin: 0;
-  }
+}
 
 body {
     position: relative;
@@ -34,12 +35,12 @@ button {
 }
 
 section {
-    position: relative; 
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 20px 0 50px 0;
+    margin: 0 0 50px 0;
     padding: 20px;
     gap: 20px;
     > article > a {
@@ -75,7 +76,6 @@ header {
                 &:hover {
                     color: var(--text-color);
                 }
-
             }
         }
     }
@@ -86,7 +86,7 @@ a.active {
 }
 
 #logo {
-    height: 50px;
+    height: 40px;
 }
 
 #search {
@@ -94,19 +94,17 @@ a.active {
     width: 30px;
 }
 
-
-/*--------------- MAIN ---------------*/
+/*--------------- HOMEPAGE ---------------*/
 
 #home {
     position: relative;
-    height: 400px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background: var(--primary-color);
     color: var(--text-color);
     > #home-img {
-        height: 500px;
+        height: clamp(300px, 40vw, 500px);
     }
 }
 
@@ -118,7 +116,7 @@ a.active {
 }
 
 #icon-container {
-    width: 100%;
+    width: clamp(70%, 20vw, 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,12 +149,12 @@ a.active {
         border: 2px solid var(--light-color);
         width: 30%;
         text-align: center;
-        > tr, td {
+        > tr,
+        td {
             padding: 15px;
             border: 2px solid var(--light-color);
         }
     }
-    
 }
 tr {
     border: 2px solid var(--text-color);
@@ -171,7 +169,6 @@ tr {
     size: 100px;
 }
 
-
 /*--------------- FOOTER ---------------*/
 
 footer {
@@ -185,19 +182,18 @@ footer {
 }
 
 /*--------------- MEDIA QUERIES ---------------*/
-
-@media only screen and (max-width: 60em){
-    #home-img {
-        display: none;
-    }
+@media only screen and (max-width: 60em) {
     header {
         display: flex;
         flex-direction: column;
     }
+}
+
+@media only screen and (max-width: 30em) {
+    #waarom-ons {
+        font-size: 1rem;
     }
-    @media only screen and (max-width: 30em){
-     
-        #waarom-ons {
-            font-size: 1rem;
-        }
+    #home-img {
+        height: 100px;
     }
+}
