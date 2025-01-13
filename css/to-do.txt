@@ -1,13 +1,13 @@
 
 1.  Je maakt een responsive layout met behulp van een CSS grid voor de algemene layout van de pagina’s en gebruikt die consistent op alle pagina’s. 
-    Je website ziet er dus zowel op mobile, desktop als tablet goed uit en heeft indien nodig een andere structuur.
 
 
-2.  Er kan op elke pagina naar de andere pagina’s genavigeerd worden. 
-    Dit doe je door een navigatiebalk te voorzien via een lijst. Het moet op elke pagina duidelijk zijn op welke pagina de gebruiker zich bevindt. 
+2.  Het moet op elke pagina duidelijk zijn op welke pagina de gebruiker zich bevindt. 
     Doe dit door de actieve pagina te markeren m.b.v. een CSS klasse ‘active’.
 
 
 3.  Spotlight: Kies een of meer favoriete topics uit de lijst en plaats deze in de “spotlight” op de indexpagina. 
     Link deze door naar de desbetreffende topic pagina.
 
+
+4.  Responsive layout

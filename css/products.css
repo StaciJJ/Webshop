@@ -154,3 +154,13 @@ h2 {
 #product-img-20 {
     background-image: url("./images/outdoors/golf.png");
 }
+
+
+/*--------------- MEDIA QUERIES ---------------*/
+
+    @media only screen and (max-width: 30em){
+        h2 {
+            width: 80%;
+        }
+    }
+
