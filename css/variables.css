@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
 :root {
-    --primary-color: rgb(251, 205, 249);
-    --secondary-color: rgb(54, 100, 116);
-    --third-color: rgb(250, 233, 248);
-    --text-color: rgb(56, 55, 55);
+    --primary-color: #fcebf1;
+    --light-color: #ddf0f0;
+    --dark-color: #98d2cd;
+    --text-color: #eea3b8;
     --border-radius: 6px;
 }
