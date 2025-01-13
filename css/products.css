@@ -56,7 +56,7 @@ h2 {
     background-image: url("./images/halloween/halloween.jpg");
 }
 #accessoires-img {
-    background-image: url("./images/accessories.png/accessories.png");
+    background-image: url("./images/accessories/accessories.png");
 }
 #sport-img {
     background-image: url("./images/outdoors/sports.png");
@@ -80,7 +80,7 @@ h2 {
     background-image: url("./images/hamsters/raincoat.png");
 }
 #highlight-img-5 {
-    background-image: url("./images/accessories.png/beanie.png");
+    background-image: url("./images/accessories/beanie.png");
 }
 
 /*--------------- SECTION 1 IMAGES ---------------*/
@@ -104,19 +104,19 @@ h2 {
 /*---------------SECTION 2 IMAGES ---------------*/
 
 #product-img-6 {
-    background-image: url("./images/accessories.png/bandana.png");
+    background-image: url("./images/accessories/bandana.png");
 }
 #product-img-7 {
-    background-image: url("./images/accessories.png/beanie.png");
+    background-image: url("./images/accessories/beanie.png");
 }
 #product-img-8 {
-    background-image: url("./images/accessories.png/bowtie.png");
+    background-image: url("./images/accessories/bowtie.png");
 }
 #product-img-9 {
-    background-image: url("./images/accessories.png/socks.png");
+    background-image: url("./images/accessories/socks.png");
 }
 #product-img-10 {
-    background-image: url("./images/accessories.png/sunglasses.jpg");
+    background-image: url("./images/accessories/sunglasses.jpg");
 }
 
 /*---------------SECTION 3 IMAGES ---------------*/
