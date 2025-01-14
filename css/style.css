@@ -21,16 +21,17 @@ body {
 
 button {
     border-radius: 40%;
-    border: solid var(--primary-color) 1px;
-    background: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
+    background: var(--light-color);
+    border: var(--dark-color) 1px solid;
+    color: var(--dark-color);
     &:hover {
         background: var(--dark-color);
+        color: var(--light-color);
         cursor: pointer;
-        color: var(--text-color);
     }
 }
 
