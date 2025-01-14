@@ -147,7 +147,7 @@ a.active {
     align-items: center;
     > table {
         border: 2px solid var(--light-color);
-        width: 30%;
+        width: 40%;
         text-align: center;
         > tr,
         td {
