@@ -57,6 +57,10 @@ section {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 /*--------------- HEADER ---------------*/
 
 header {
@@ -82,7 +86,7 @@ header {
     }
 }
 
-a.active {
+.navLinks:active {
     color: var(--text-color);
 }
 
@@ -107,6 +111,10 @@ a.active {
     > #home-img {
         height: clamp(300px, 40vw, 500px);
     }
+}
+
+#welkom {
+    top: 0;
 }
 
 #waarom-ons {
@@ -187,6 +195,9 @@ footer {
     header {
         display: flex;
         flex-direction: column;
+    }
+    #welkom {
+        top: 0;
     }
 }
 

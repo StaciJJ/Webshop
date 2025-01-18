@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/contact.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
         <title>Whisker Wardrobe</title>
     </head>
     <body>
-<!--------------HEADER----------------->
+        <!--HEADER-->
         <header>
-            <img id="logo" src="css/images/logo.png" title="logo" alt="logo" />
+            <img id="logo" src="css/images/logo.png" title="logo" alt="logo" >
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><button id="search"><i class="fa-solid fa-magnifying-glass"></i></button> </li>
+                    <li
+                        ><button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </li>
                 </ul>
-            </header>
             </nav>
-            <br>
-<!--------------CONTACT FORM----------------->
+        </header>
+        <br >
+        <!--CONTACT FORM-->
         <section id="contact-form-container">
-       
-          <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
-            <h1>Contacteer ons! &#8669;</h1>
-            <fieldset id="reden-contact-options">
-                <h3>Reden van contact</h3>
-                <select id="reden-van-contact" name="reden-van-contact">
-                    <option value="bestelling" selected>Bestelling</option>
-                    <option value="klantenservice">Klantenservice</option>
-                    <option value="andere">Andere</option>
-                  </select>
-            </fieldset>
-            <fieldset id="categorie-radio-buttons">
-              <h3>Categorie</h3>
-              <div>
-                <input type="radio" name="Categorie" id="rdbAccessoires" value="Accessoires" />
-                <label for="rdbAccessoires">Accessoires</label>
-              </div>
-              <div>
-                <input type="radio" name="Categorie" id="rdbSports" value="Sports" />
-                <label for="rdbSports">Sports</label>
-              </div>
-              <div>
-                <input type="radio" name="Categorie" id="rdbHalloween" value="Halloween" />
-                <label for="rdbHalloween">Halloween</label>
-              </div>
-              <div>
-                <input type="radio" name="Categorie" id="rdbBrunch" value="Brunch" />
-                <label for="Brunch">Brunch</label>
-              </div>
-            </fieldset>
-            <fieldset id="info-form">
-              <h3>Jouw info</h3>
-              <label for="lastname">*Familienaam:</label>
-              <input type="text" name="lastname" id="lastname-input" required />
-              <label for="firstname">*Voornaam:</label>
-              <input type="text" name="firstname" id="firstname-input" required />
-              <label for="adress">*Adres:</label>
-              <input type="text" name="adress" id="adress-input" required />
-              <label for="telefoon">*Telefoonnummer:</label>
-              <input type="tel" name="telefoon" id="telefoon-input" required />
-              <label for="txtMail">*E-mailadres:</label>
-              <input type="email" name="Mail" id="txtMail" required />
-              <label for="vraag">*Vraag</label>
-              <textarea id="vraag" name="vraag" rows="4" cols="30"></textarea>
-              <p>* Verplichte velden</p>
-            </fieldset>
-            
-            <div id="input-button-container">
-              <input class="input-button" type="submit" value="Verstuur" />
-              <input class="input-button" type="submit" value="Reset" />
-            </div>
-          </form>
-    </section>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+                <h1>Contacteer ons! &#8669;</h1>
+                <fieldset id="reden-contact-options">
+                    <h3>Reden van contact</h3>
+                    <select id="reden-van-contact" name="reden-van-contact">
+                        <option value="bestelling" selected>Bestelling</option>
+                        <option value="klantenservice">Klantenservice</option>
+                        <option value="andere">Andere</option>
+                    </select>
+                </fieldset>
+                <fieldset id="categorie-radio-buttons">
+                    <h3>Categorie</h3>
+                    <div>
+                        <input type="radio" name="Categorie" id="rdbAccessoires" value="Accessoires" >
+                        <label for="rdbAccessoires">Accessoires</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Categorie" id="rdbSports" value="Sports" >
+                        <label for="rdbSports">Sports</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Categorie" id="rdbHalloween" value="Halloween" >
+                        <label for="rdbHalloween">Halloween</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Categorie" id="rdbHamster" value="Brunch" >
+                        <label for="rdbHamster">Hamster</label>
+                    </div>
+                </fieldset>
+                <fieldset id="info-form">
+                    <h3>Jouw info</h3>
+                    <label for="lastname">*Familienaam:</label>
+                    <input type="text" name="lastname" id="lastname" required >
+                    <label for="firstname">*Voornaam:</label>
+                    <input type="text" name="firstname" id="firstname" required >
+                    <label for="adress">*Adres:</label>
+                    <input type="text" name="adress" id="adress" required >
+                    <label for="telefoon">*Telefoonnummer:</label>
+                    <input type="tel" name="telefoon" id="telefoon" required >
+                    <label for="txtMail">*E-mailadres:</label>
+                    <input type="email" name="Mail" id="txtMail" required >
+                    <label for="vraag">*Vraag</label>
+                    <textarea id="vraag" name="vraag" rows="4" cols="30"></textarea>
+                    <p>* Verplichte velden</p>
+                </fieldset>
+
+                <div id="input-button-container">
+                    <input class="input-button" type="submit" value="Verstuur" >
+                    <input class="input-button" type="submit" value="Reset" >
+                </div>
+            </form>
+        </section>
 
         <button id="chat"><i class="fa-regular fa-comment fa-lg"></i></button>
-        <br>
-<!--------------FOOTER----------------->
+        <br >
+        <!--FOOTER-->
         <footer>
             Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden.
-          <br>
-            © Johnson Staci - WFB@Home - Howest</footer>
+            <br >
+            © Johnson Staci - WFB@Home - Howest</footer
+        >
     </body>
-    </html>
+</html>

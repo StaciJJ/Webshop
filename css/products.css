@@ -3,6 +3,8 @@
 /*--------------- PRODUCTS ---------------*/
 
 h2 {
+    position: absolute;
+    top: -100px;
     color: var(--dark-color);
     font-family: "Reenie Beanie", serif;
     font-size: 3rem;
@@ -12,6 +14,7 @@ h2 {
 }
 
 .products {
+    margin-top: 100px;
     .product-img {
         background: var(--primary-color);
         border-radius: var(--border-radius);
@@ -66,19 +69,19 @@ h2 {
 
 /*--------------- CATEGORY IMAGES ---------------*/
 
-#highlight-img-1 {
+#spotlight-img-1 {
     background-image: url("./images/halloween/vampire.png");
 }
-#highlight-img-2 {
+#spotlight-img-2 {
     background-image: url("./images/outdoors/checkers.png");
 }
-#highlight-img-3 {
+#spotlight-img-3 {
     background-image: url("./images/outdoors/swimsuit.png");
 }
-#highlight-img-4 {
+#spotlight-img-4 {
     background-image: url("./images/hamsters/raincoat.png");
 }
-#highlight-img-5 {
+#spotlight-img-5 {
     background-image: url("./images/accessories/beanie.png");
 }
 
@@ -153,7 +156,6 @@ h2 {
 #product-img-20 {
     background-image: url("./images/outdoors/golf.png");
 }
-
 
 /*--------------- MEDIA QUERIES ---------------*/
 

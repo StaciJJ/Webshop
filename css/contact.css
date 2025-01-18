@@ -5,6 +5,7 @@
 #contact-form-container {
     width: 100%;
     color: var(--dark-color);
+    background: var(--primary-color);
 }
 
 form {
@@ -17,11 +18,9 @@ form {
         "select radio"
         "info info"
         "footer footer";
-        width: clamp(300px, 1000px);
+    width: clamp(300px, 1000px);
     margin: 0 20px;
 }
-
-
 
 h1 {
     color: var(--text-color);
@@ -95,17 +94,17 @@ select {
 /*--------------- MEDIA QUERIES ---------------*/
 
 @media only screen and (max-width: 30em) {
-   form {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "select"
-    "radio"
-    "info"
-    "footer";
-    justify-items: center;
-   }
-   fieldset {
-    margin: 0 auto;
-   }
+    form {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "select"
+            "radio"
+            "info"
+            "footer";
+        justify-items: center;
+    }
+    fieldset {
+        margin: 0 auto;
+    }
 }
