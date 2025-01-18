@@ -1,7 +1,0 @@
-
-1.  Het moet op elke pagina duidelijk zijn op welke pagina de gebruiker zich bevindt. 
-    Doe dit door de actieve pagina te markeren m.b.v. een CSS klasse ‘active’.
-
-
-2.  Spotlight: Kies een of meer favoriete topics uit de lijst en plaats deze in de “spotlight” op de indexpagina. 
-    Link deze door naar de desbetreffende topic pagina.
